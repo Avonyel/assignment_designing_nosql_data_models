@@ -110,7 +110,7 @@ users: {
 		password: "IHeartDogs"
 		email: "billy@billynet.org"
 		semesters: [{ semester_id: "FALL2016"
-								  courses: [{course_id: "MATH101", 
+								  courses: [{course_id: "MATH101",
 									 tests: {
 									 	"unit_test_1": 76,
 										"unit_test_2": 94
@@ -122,7 +122,7 @@ users: {
 									 },
 								{ semester_id: "SPRING2016"
 								  courses: [
-								  {course_id: "MATH101", 
+								  {course_id: "MATH101",
 									 tests: {
 									 	"unit_test_1": 76,
 										"unit_test_2": 94
@@ -171,10 +171,79 @@ exams: [
                        Advanced 1
 -------------------------------------------------------------
 
-{
-	legos: {
+// products
+products:{
+  000090: {
+    name: legos
+    department: "Toys"
 		price: 700
 		num_in_stock: 47000
+    units_sold_to_date: 2
 		earnings_to_date: 1400
+    receipts: ["id_1", "id_2"]
+	},
+  0009383: {
+    name: gameboys
+		price: 700
+		num_in_stock: 47000
+    units_sold_to_date: 2
+		earnings_to_date: 1400
+    receipts: ["id_1", "id_2"]
 	}
 }
+
+receipts {
+  id_1: {
+    date_of_purchase: "1998-12-01 :: 00:00:23"
+    total_price: 9999,
+    customer_id: "45878"
+    products: [
+      { product_id: "000098", quantity: 5, price: 500 },
+      { product_id: "000098", quantity: 5, price: 500 },
+      { product_id: "000908", quantity: 2, price: 500 }
+  ]
+  },
+  id_2: {
+    total_price: 9999,
+    customer_id: "45878"
+    products: [
+      { product_id: "000098", quantity: 5, price: 500 },
+      { product_id: "000098", quantity: 5, price: 500 },
+      { product_id: "000908", quantity: 2, price: 500 }
+  ]
+}
+
+revenue_intervals_product {
+  Quarters: [
+    {
+      name: "Quarter1 2016",
+      revenue_by_product: [
+        {
+            product_id: 000989
+            product_revenue: 9
+        },
+        {
+            product_id: 000989
+            product_revenue: 9
+        }
+      ]
+    },
+    {
+      name: "Quarter1 2016",
+      revenue_by_product: [
+        {
+            product_id: 000989
+            product_revenue: 9
+        },
+        {
+            product_id: 000989
+            product_revenue: 9
+        }
+      ]
+    }
+  ]  
+}
+
+-------------------------------------------------------------
+                       Advanced 2
+-------------------------------------------------------------
