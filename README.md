@@ -247,3 +247,44 @@ revenue_intervals_product {
 -------------------------------------------------------------
                        Advanced 2
 -------------------------------------------------------------
+
+users: {
+	000000001: {
+		fname: "Fred",
+		lname: "Flintstone",
+		friends: [000204454, 24957495, 09323476, 23762388]
+		activities: [
+			{
+				action: "like",
+				target: "post_3498237498237",
+				target_user: 000204454
+				body: null,
+				time: "2016-03-03 :: 06:31:00"
+			},
+			{
+				action: "share",
+				target: "http://www.reddit.com/r/nosleep",
+				target_user: 000000001
+				body: "I can't sleep anymore T_T"
+				time: "2016-03-02 :: 05:00:00"
+			}
+		]
+	}
+}
+
+interactions: {
+	000000001: [
+		{
+			friend_id: 000000001,
+			interaction_count: 1764589
+		},
+		{
+			friend_id: 000204454,
+			interaction_count: 1
+		},
+		{
+			friend_id: 24957495,
+			interaction_count: 0
+		}
+	]
+}
