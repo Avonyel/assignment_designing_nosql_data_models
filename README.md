@@ -104,6 +104,39 @@ tables {
       * class_object: exam_strings
         * exam: Number
 
+users: {
+	id555: {
+		username: "Billy",
+		password: "IHeartDogs"
+		email: "billy@billynet.org"
+		semesters: [{ semester_id: "FALL2016"
+								  courses: [{course_id: "MATH101", 
+									 tests: {
+									 	"unit_test_1": 76,
+										"unit_test_2": 94
+									},
+									{course_id: "LIT203",
+									 tests: {
+									 	"unit_test_1": 76,
+										"unit_test_2": 94
+									 },
+								{ semester_id: "SPRING2016"
+								  courses: [
+								  {course_id: "MATH101", 
+									 tests: {
+									 	"unit_test_1": 76,
+										"unit_test_2": 94
+									},
+									{course_id: "LIT203",
+									 tests: {
+									 	"unit_test_1": 76,
+										"unit_test_2": 94
+									 }
+							    ]
+		]
+		}
+	}
+
 * Exam Object
   * Name of the test
   * Class_Name: String
@@ -112,3 +145,36 @@ tables {
     * test_object
       * student_id: String
       * score: Number
+
+exams: [
+	{ name: "unit_test_1"
+		class: "MATH101",
+		semester_id: "FALL2016",
+		scores: {
+			id555: 76,
+			id789: 99
+		}
+	},
+	{ name: "unit_test_2"
+		class: "MATH101",
+		semester_id: "FALL2016",
+		scores: {
+			id555: 97,
+			id789: 40
+		}
+	}
+]
+
+
+
+-------------------------------------------------------------
+                       Advanced 1
+-------------------------------------------------------------
+
+{
+	legos: {
+		price: 700
+		num_in_stock: 47000
+		earnings_to_date: 1400
+	}
+}
